@@ -1,42 +1,39 @@
 {"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
-         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
-         "context_set": ""
+        {"tag": "age",
+         "patterns": ["What age has risk of breast cancer", "Are younger age people less risk of breast cancer"],
+         "responses": ["If you are over 50 years old, you have a risk of breast cancer", "From 50 to 69 years old, you need to check mammography every year"]
+         },
+        {"tag": "alcohol",
+         "patterns": ["alcohol relates to breast cancer", "risk from alcohol"],
+         "responses": ["Drinking 3 alcohol drinks per day can increase the risk of breast cancer", "Drinking too much causes many cancer diseases"]
         },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye"],
-         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        {"tag": "BMI",
+         "patterns": ["risk from overweight", "Does overweight increase the risk of breast cancer"],
+         "responses": ["If your BMI value is over 25 or you are overweight, you have more risk of breast cancer"]
         },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        {"tag": "gene",
+         "patterns": ["risk from gene", "family history of breast cancer"],
+         "responses": ["If you have any family person or relatives who have breast cancer, you might have BRCA1, BRCA2 gene", "Family history of breast cancer can increase your risk of breast cancer"]
         },
-        {"tag": "hours",
-         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
-         "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+        {"tag": "race",
+         "patterns": ["Which countries have high risk of breast cancer?", "risk from different nationality"],
+         "responses": ["You might have risk of breast cancer, if you are from America, Africa, Asia, or Latina"]
         },
-        {"tag": "mopeds",
-         "patterns": ["Which mopeds do you have?", "What kinds of mopeds are there?", "What do you rent?" ],
-         "responses": ["We rent Yamaha, Piaggio and Vespa mopeds", "We have Piaggio, Vespa and Yamaha mopeds"]
+        {"tag": "symptoms",
+         "patterns": ["What are symptoms of breast cancer", "breast self-examine", "How do I recognize changes of my breast realted to breast cancer" ],
+         "responses": ["your breats appear redness or flaky skin in the nipple area or the breast", "your nipple discharge other than breast milk, including blood", "any lump in the breast or underarm (armpit)","any part of your breast get thickened or swollen"]
         },
-        {"tag": "payments",
-         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
-         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+        {"tag": "diseases",
+         "patterns": ["what types of diseases increase risk of breast cancer"],
+         "responses": ["If you have any breast-related diseases, you have the risk of breast cancer", "You have any pain in any area of the breast and you need to visit a doctor"]
         },
-        {"tag": "opentoday",
-         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
-         "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+        {"tag": "radiation",
+         "patterns": ["risk from radiation therapy"],
+         "responses": ["If you have radiation therapy to the chest including breasts before 30 years old, the risk of breast cancer increases"]
         },
-        {"tag": "rental",
-         "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?" ],
-         "responses": ["Are you looking to rent today or later this week?"],
-         "context_set": "rentalday"
-        },
-        {"tag": "today",
-         "patterns": ["today"],
-         "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED"],
-         "context_filter": "rentalday"
-        }
+        {"tag": "hormone",
+         "patterns": ["risk from external hormones"],
+         "responses": ["If you take external hormones like contraceptives, you have the risk of breast cancer"]
+         }
    ]
 }
