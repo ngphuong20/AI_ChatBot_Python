@@ -4,6 +4,14 @@
          "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
          "context_set": ""
         },
+         {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
         {"tag": "age",
          "patterns": ["What age has risk of breast cancer", "Are younger age people less risk of breast cancer"],
          "responses": ["If you are over 50 years old, you have a risk of breast cancer", "From 50 to 69 years old, you need to check mammography every year"]
