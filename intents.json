@@ -47,6 +47,16 @@
         {"tag": "hormone",
          "patterns": ["risk from external hormones"],
          "responses": ["If you take external hormones like contraceptives, you have the risk of breast cancer"]
-         }
+         }, 
+         {"tag": "diagnosis",
+         "patterns": ["Do I have a breast cancer", "Do I need to worry about breast cancer"],
+         "responses": ["If you have many risks of breast cancer from our discussion, you might have a potential of breast cancer"],
+         "context_set": "diagnosis"
+        },
+        {"tag": "recommendation",
+         "patterns": ["any recommendation", "what should I do?"],
+         "responses": ["You might consider to visit a doctor for a careful check"],
+         "context_filter": "diagnosis"
+        }
    ]
 }
