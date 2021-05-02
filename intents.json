@@ -1,4 +1,9 @@
 {"intents": [
+         {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
         {"tag": "age",
          "patterns": ["What age has risk of breast cancer", "Are younger age people less risk of breast cancer"],
          "responses": ["If you are over 50 years old, you have a risk of breast cancer", "From 50 to 69 years old, you need to check mammography every year"]
